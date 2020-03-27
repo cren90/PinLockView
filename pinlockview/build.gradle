@@ -8,23 +8,16 @@ apply plugin: 'maven'
 group = 'com.github.cren90'
 
 ext {
-    bintrayRepo = 'maven'
-    bintrayName = 'pin-lock-view'
-
-    publishedGroupId = 'com.andrognito.pinlockview'
-    libraryName = 'pinlockview'
-    artifact = 'pinlockview'
-
     libraryDescription = 'A clean, minimalistic, easy-to-use and highly customizable pin lock custom view'
 
     siteUrl = 'https://github.com/cren90/PinLockView'
     gitUrl = 'https://github.com/cren90/PinLockView.git'
 
-    libraryVersion = '3.0.0'
+    libraryVersion = '1.0.0'
 
-    developerId = 'aritraroy'
-    developerName = 'Aritra Roy'
-    developerEmail = 'aritra.roy.in@gmail.com'
+    developerId = 'cren90'
+    developerName = 'Chris Renfrow'
+    developerEmail = 'chrisrenfrowdev@gmail.com'
 
     licenseName = 'The Apache Software License, Version 2.0'
     licenseUrl = 'http://www.apache.org/licenses/LICENSE-2.0.txt'
@@ -40,7 +33,7 @@ android {
         minSdkVersion 23
         targetSdkVersion 29
         versionCode 5
-        versionName "3.0.0"
+        versionName "1.0.0"
         vectorDrawables.useSupportLibrary = true
     }
     buildTypes {
