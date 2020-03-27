@@ -16,7 +16,7 @@
         app:indicatorEmptyBackground="@drawable/dot_empty"
         app:indicatorFilledBackground="@drawable/dot_filled"
         app:indicatorHeight="@dimen/default_indicator_size"
-        app:indicatorType="fixedWithValue"
+        app:indicatorType="fixed"
         app:indicatorWidth="8dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

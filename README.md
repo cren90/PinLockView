@@ -5,17 +5,16 @@ A clean, minimalistic, easy-to-use and highly customizable pin lock custom view 
 
 [![](https://jitpack.io/v/cren90/PinLockView.svg)](https://jitpack.io/#cren90/PinLockView) [![API](https://img.shields.io/badge/API-23%2B-orange.svg?style=flat)](https://android-arsenal.com/api?level=23) [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
 
-![PinLockView](https://github.com/cren90/PinLockView/blob/master/screens/logo.png)
 
 This library allows you to implement a pin lock mechanism in your app **easily and quickly**. There are **plenty of customization options** available to change the look-and-feel of this view to match your app's theme.
 
 You can also use it as a dial pad to dial numbers. There are several other use cases of this library and is not restricted to only pin locking.
 
-![PinLockView](https://github.com/aritraroy/PinLockView/blob/master/screens/promo.png)
+![PinLockView](https://github.com/cren90/PinLockView/blob/master/screens/screen_blank.jpg) ![PinLockView](https://github.com/cren90/PinLockView/blob/master/screens/screen_blank_5_highlight.jpg) ![PinLockView](https://github.com/cren90/PinLockView/blob/master/screens/screen_3_digit_filled.jpg) ![PinLockView](https://github.com/cren90/PinLockView/blob/master/screens/screen_5_filled_6_highlight.jpg)
 
 # Download
 
-This library is available in **jitpack** which is the default Maven repository used in Android Studio.
+This library is available in **jitpack**
 
 ## Gradle 
 ```gradle

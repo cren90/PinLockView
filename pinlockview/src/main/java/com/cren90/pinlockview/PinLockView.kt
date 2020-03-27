@@ -175,6 +175,11 @@ class PinLockView : RecyclerView {
         }
 
     private var indicator: Indicator? = null
+        set(value) {
+            field = value
+            field?.pinLength = pinLength
+            field?.pin = pin
+        }
 
     private var adapter: PinLockAdapter? = null
     var pinLockListener: PinLockListener? = null
