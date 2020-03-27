@@ -140,7 +140,13 @@ There are several theming options available through XML attributes which you can
   app:indicatorTextSize="16dp"                              // Change the text size when shown
   app:indicatorType="fillWithAnimation"                     // Choose between "fixed", "fill" "fixedWithValue" and "fillWithValue"
 ```
+# About the author
 
+### Chris Renfrow
+Android developer, Scrum Master
+
+<div class="LI-profile-badge"  data-version="v1" data-size="medium" data-locale="en_US" data-type="vertical" data-theme="light" data-vanity="crenfrow90"><a class="LI-simple-link" href='https://www.linkedin.com/in/crenfrow90?trk=profile-badge'>Christopher Renfrow</a></div>
+<a href="https://stackexchange.com/users/1000035"><img src="https://stackexchange.com/users/flair/1000035.png" width="208" height="58" alt="profile for cren90 on Stack Exchange, a network of free, community-driven Q&amp;A sites" title="profile for cren90 on Stack Exchange, a network of free, community-driven Q&amp;A sites"></a>
 # Contribution
 
 This library is quite exhaustive and offers a lot of customization options. If you find a bug or would like to improve any aspect of it, feel free to contribute with pull requests.
@@ -162,3 +168,6 @@ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 See the License for the specific language governing permissions and
 limitations under the License.
 ```
+
+
+<script type="text/javascript" src="https://platform.linkedin.com/badges/js/profile.js" async defer></script>
