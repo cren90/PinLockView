@@ -145,7 +145,7 @@ There are several theming options available through XML attributes which you can
 ### Chris Renfrow
 Android developer, Scrum Master
 
-<a href='https://www.linkedin.com/in/crenfrow90?trk=profile-badge'><img src="https://github.com/cren90/icons/blob/master/linkedin.png" alt="Profile for Chris Renfrow on LinkedIn"></a> <a href="https://stackexchange.com/users/1000035"><img src="https://github.com/cren90/icons/blob/master/stackoverflow.png" alt="profile for cren90 on Stack Exchange, a network of free, community-driven Q&amp;A sites" title="profile for cren90 on Stack Exchange, a network of free, community-driven Q&amp;A sites"></a> <a href="https://www.scrumalliance.org/community/profile/crenfrow2"<img src="https://github.com/cren90/icons/blob/master/seal-csm.png" alt Profile for Chris Renfrow on Scrum Alliance Community.></a>
+<a href='https://www.linkedin.com/in/crenfrow90?trk=profile-badge'><img src="https://github.com/cren90/icons/blob/master/linkedin.png" width="75" alt="Profile for Chris Renfrow on LinkedIn"></a> <a href="https://stackexchange.com/users/1000035"><img src="https://github.com/cren90/icons/blob/master/stackoverflow.png" width="75" alt="profile for cren90 on Stack Exchange, a network of free, community-driven Q&amp;A sites"></a> <a href="https://www.scrumalliance.org/community/profile/crenfrow2"><img src="https://github.com/cren90/icons/blob/master/seal-csm.png" width="75" alt="Profile for Chris Renfrow on Scrum Alliance Community."></a>
 
 # Contribution
 
