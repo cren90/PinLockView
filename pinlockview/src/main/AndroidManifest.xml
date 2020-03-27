@@ -1,5 +1,5 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.andrognito.pinlockview">
+    package="com.cren90.pinlockview">
 
     <application
         android:label="@string/app_name" />

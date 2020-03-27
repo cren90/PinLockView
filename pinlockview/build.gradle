@@ -1,4 +1,8 @@
 apply plugin: 'com.android.library'
+apply plugin: 'kotlin-platform-android'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-kapt'
+apply plugin: 'kotlin-android-extensions'
 
 ext {
     bintrayRepo = 'maven'
@@ -10,10 +14,10 @@ ext {
 
     libraryDescription = 'A clean, minimalistic, easy-to-use and highly customizable pin lock custom view'
 
-    siteUrl = 'https://github.com/aritraroy/PinLockView'
-    gitUrl = 'https://github.com/aritraroy/PinLockView.git'
+    siteUrl = 'https://github.com/cren90/PinLockView'
+    gitUrl = 'https://github.com/cren90/PinLockView.git'
 
-    libraryVersion = '2.1.0'
+    libraryVersion = '3.0.0'
 
     developerId = 'aritraroy'
     developerName = 'Aritra Roy'
@@ -26,14 +30,15 @@ ext {
 
 
 android {
-    compileSdkVersion 25
-    buildToolsVersion "25.0.3"
+    compileSdkVersion 29
+    buildToolsVersion "29.0.3"
 
     defaultConfig {
-        minSdkVersion 11
-        targetSdkVersion 25
+        minSdkVersion 23
+        targetSdkVersion 29
         versionCode 5
-        versionName "2.1.0"
+        versionName "3.0.0"
+        vectorDrawables.useSupportLibrary = true
     }
     buildTypes {
         release {
@@ -44,11 +49,15 @@ android {
 }
 
 dependencies {
-    compile fileTree(dir: 'libs', include: ['*.jar'])
-    testCompile 'junit:junit:4.12'
-    compile 'com.android.support:appcompat-v7:25.3.1'
-    compile 'com.android.support:recyclerview-v7:25.3.1'
-}
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation 'androidx.appcompat:appcompat:1.1.0'
+    implementation 'androidx.recyclerview:recyclerview:1.1.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.0.0-beta4'
 
-apply from: 'https://raw.githubusercontent.com/nuuneoi/JCenter/master/installv1.gradle'
-apply from: 'https://raw.githubusercontent.com/nuuneoi/JCenter/master/bintrayv1.gradle'
+    implementation "org.jetbrains.kotlin:kotlin-reflect:$kotlin_version"
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+    implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-android:1.3.0'
+    implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-core:1.3.0'
+
+    testImplementation 'junit:junit:4.12'
+}

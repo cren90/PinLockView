@@ -29,7 +29,7 @@ dependencies {
 
 ```xml
 <dependency>
-  <groupId>com.andrognito.pinlockview</groupId>
+  <groupId>com.cren90.pinlockview</groupId>
   <artifactId>pinlockview</artifactId>
   <version>2.1.0</version>
   <type>pom</type>

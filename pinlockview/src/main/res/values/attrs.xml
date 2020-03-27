@@ -5,24 +5,39 @@
         <attr name="keypadTextColor" format="color" />
         <attr name="keypadTextSize" format="dimension" />
         <attr name="keypadButtonSize" format="dimension" />
+        <attr name="keypadButtonElevation" format="dimension" />
         <attr name="keypadVerticalSpacing" format="dimension" />
         <attr name="keypadHorizontalSpacing" format="dimension" />
-        <attr name="keypadButtonBackgroundDrawable" format="integer" />
-        <attr name="keypadDeleteButtonDrawable" format="integer" />
+        <attr name="keypadButtonBackgroundDrawable" format="reference" />
+        <attr name="keypadDeleteButtonDrawable" format="reference" />
+        <attr name="keypadDeleteButtonBackgroundDrawable" format="reference" />
         <attr name="keypadDeleteButtonSize" format="dimension" />
+        <attr name="keypadDeleteButtonElevation" format="dimension" />
         <attr name="keypadShowDeleteButton" format="boolean" />
-        <attr name="keypadDeleteButtonPressedColor" format="color" />
+        <attr name="keypadDeleteButtonTintColor" format="color" />
+        <attr name="keypadDeleteButtonContentDescription" format="string" />
+        <attr name="keypadSubmitButtonDrawable" format="reference" />
+        <attr name="keypadSubmitButtonBackgroundDrawable" format="reference" />
+        <attr name="keypadSubmitButtonSize" format="dimension" />
+        <attr name="keypadSubmitButtonElevation" format="dimension" />
+        <attr name="keypadShowSubmitButton" format="boolean" />
+        <attr name="keypadSubmitButtonTintColor" format="color" />
+        <attr name="keypadSubmitButtonContentDescription" format="string" />
+    </declare-styleable>
 
-        <attr name="dotEmptyBackground" format="reference" />
-        <attr name="dotFilledBackground" format="reference" />
-        <attr name="dotDiameter" format="dimension" />
-        <attr name="dotSpacing" format="dimension" />
+    <declare-styleable name="Indicator">
+        <attr name="indicatorEmptyBackground" format="reference" />
+        <attr name="indicatorFilledBackground" format="reference" />
+        <attr name="indicatorHeight" format="dimension" />
+        <attr name="indicatorWidth" format="dimension" />
+        <attr name="indicatorSpacing" format="dimension" />
+        <attr name="indicatorTextSize" format="dimension" />
         <attr name="indicatorType" format="enum">
             <enum name="fixed" value="0" />
             <enum name="fill" value="1" />
-            <enum name="fillWithAnimation" value="2" />
+            <enum name="fixedWithValue" value="2" />
+            <enum name="fillWithValue" value="3" />
         </attr>
-
     </declare-styleable>
 
 </resources>

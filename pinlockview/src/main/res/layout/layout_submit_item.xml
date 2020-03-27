@@ -4,12 +4,16 @@
     android:layout_height="wrap_content"
     android:clipChildren="false"
     android:clipToPadding="false"
+    android:gravity="center"
     android:orientation="vertical">
 
-    <Button
-        android:id="@+id/button"
+    <ImageView
+        android:id="@+id/buttonImage"
         android:layout_width="@dimen/default_button_size"
         android:layout_height="@dimen/default_button_size"
-        android:background="?android:attr/selectableItemBackground"/>
-
+        android:background="?android:attr/selectableItemBackground"
+        android:clickable="true"
+        android:focusable="true"
+        android:scaleType="centerInside"
+        android:src="@drawable/ic_done_black" />
 </LinearLayout>

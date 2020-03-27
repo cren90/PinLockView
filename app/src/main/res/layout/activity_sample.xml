@@ -1,52 +1,45 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/mine_shaft"
-    tools:context="com.andrognito.pinlockviewapp.SampleActivity">
+    tools:context="com.cren90.pinlockviewapp.SampleActivity">
 
-    <ImageView
-        android:id="@+id/profile_image"
-        android:layout_width="84dp"
-        android:layout_height="84dp"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="104dp"
-        android:src="@drawable/img_no_avatar" />
-
-    <TextView
-        android:id="@+id/profile_name"
-        android:layout_width="256dp"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/profile_image"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="36dp"
-        android:fontFamily="sans-serif-thin"
-        android:gravity="center"
-        android:maxLines="1"
-        android:text="Welcome"
-        android:textColor="@color/white"
-        android:textSize="34sp" />
-
-    <com.andrognito.pinlockview.IndicatorDots
-        android:id="@+id/indicator_dots"
+    <com.cren90.pinlockview.Indicator
+        android:id="@+id/indicator"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@id/profile_name"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="36dp" />
+        android:layout_marginTop="36dp"
+        android:gravity="center"
+        app:indicatorEmptyBackground="@drawable/dot_empty"
+        app:indicatorFilledBackground="@drawable/dot_filled"
+        app:indicatorHeight="@dimen/default_indicator_size"
+        app:indicatorType="fixedWithValue"
+        app:indicatorWidth="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
-    <com.andrognito.pinlockview.PinLockView
+    <com.cren90.pinlockview.PinLockView
         android:id="@+id/pin_lock_view"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@id/indicator_dots"
-        android:layout_centerHorizontal="true"
         android:layout_marginTop="16dp"
         app:keypadButtonSize="72dp"
         app:keypadShowDeleteButton="true"
         app:keypadTextColor="@color/white"
-        app:keypadTextSize="18dp" />
+        app:keypadDeleteButtonDrawable="@drawable/ic_backspace_black"
+        app:keypadDeleteButtonTintColor="@color/greyish"
+        app:keypadShowSubmitButton="true"
+        app:keypadSubmitButtonBackgroundDrawable="@drawable/dot_filled"
+        app:keypadSubmitButtonDrawable="@drawable/ic_done_black"
+        app:keypadSubmitButtonTintColor="@color/mine_shaft"
+        app:keypadTextSize="18dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/indicator"
+        app:pinLength="6" />
 
-</RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

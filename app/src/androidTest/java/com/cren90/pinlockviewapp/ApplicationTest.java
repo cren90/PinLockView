@@ -1,4 +1,4 @@
-package com.andrognito.pinlockview;
+package com.cren90.pinlockviewapp;
 
 import android.app.Application;
 import android.test.ApplicationTestCase;
