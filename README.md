@@ -138,6 +138,7 @@ There are several theming options available through XML attributes which you can
   app:indicatorWidth="12dp"                                 // Change the diameter of the dots
   app:indicatorSpacing="16dp"                               // Change the spacing between individual dots
   app:indicatorTextSize="16dp"                              // Change the text size when shown
+  app:indicatorTint="#FFFFFFF"                              // Change the text and dot color
   app:indicatorType="fillWithAnimation"                     // Choose between "fixed", "fill" "fixedWithValue" and "fillWithValue"
 ```
 # About the author
