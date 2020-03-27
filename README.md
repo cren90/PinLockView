@@ -10,7 +10,7 @@ This library allows you to implement a pin lock mechanism in your app **easily a
 
 You can also use it as a dial pad to dial numbers. There are several other use cases of this library and is not restricted to only pin locking.
 
-![PinLockView](https://github.com/cren90/PinLockView/blob/master/screens/screen_blank.jpg) ![PinLockView](https://github.com/cren90/PinLockView/blob/master/screens/screen_blank_5_highlight.jpg) ![PinLockView](https://github.com/cren90/PinLockView/blob/master/screens/screen_3_digit_filled.jpg) ![PinLockView](https://github.com/cren90/PinLockView/blob/master/screens/screen_5_filled_6_highlight.jpg)
+<img src="https://github.com/cren90/PinLockView/blob/master/screens/screen_blank.jpg" alt="drawing" width="200"/> <img src="https://github.com/cren90/PinLockView/blob/master/screens/screen_blank_5_highlight.jpg" alt="drawing" width="200"/> <img src="https://github.com/cren90/PinLockView/blob/master/screens/screen_3_digit_filled.jpg" alt="drawing" width="200"/> <img src="https://github.com/cren90/PinLockView/blob/master/screens/screen_5_filled_6_highlight.jpg" alt="drawing" width="200"/>
 
 # Download
 
