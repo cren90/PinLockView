@@ -3,6 +3,9 @@ apply plugin: 'kotlin-platform-android'
 apply plugin: 'kotlin-android'
 apply plugin: 'kotlin-kapt'
 apply plugin: 'kotlin-android-extensions'
+apply plugin: 'maven'
+
+group = 'com.github.cren90'
 
 ext {
     bintrayRepo = 'maven'
