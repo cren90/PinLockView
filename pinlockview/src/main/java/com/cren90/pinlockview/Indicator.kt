@@ -14,7 +14,8 @@ import androidx.annotation.IntDef
  * can be used to indicate the current length of the input
  *
  *
- * Created by aritraroy on 01/06/16.
+ * Created by cren90 on 3/26/2020.
+ * inspired by aritaroy
  */
 class Indicator @JvmOverloads constructor(context: Context,
                                           attrs: AttributeSet? = null,

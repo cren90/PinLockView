@@ -6,7 +6,8 @@ import android.graphics.drawable.Drawable
  * The customization options for the buttons in [PinLockView]
  * passed to the [PinLockAdapter] to decorate the individual views
  *
- * Created by aritraroy on 01/06/16.
+ * Created by cren90 on 3/26/2020.
+ * inspired by aritaroy
  */
 data class CustomizationOptionsBundle(
         var textColor: Int = 0,

@@ -13,7 +13,8 @@ import androidx.recyclerview.widget.RecyclerView
 import androidx.recyclerview.widget.RecyclerView.ViewHolder
 
 /**
- * Created by aritraroy on 31/05/16.
+ * Created by cren90 on 3/26/2020.
+ * inspired by aritaroy
  */
 class PinLockAdapter(private val mContext: Context) : RecyclerView.Adapter<ViewHolder>() {
     var customizationOptions: CustomizationOptionsBundle? = null

@@ -15,7 +15,8 @@ import com.cren90.pinlockview.PinLockAdapter.OnNumberClickListener
  *
  * It can also be used as dial pad for taking number inputs.
  * Optionally, [Indicator] can be attached to this view to indicate the length of the input taken
- * Created by aritraroy on 31/05/16.
+ * Created by cren90 on 3/26/2020.
+ * inspired by aritaroy
  */
 class PinLockView : RecyclerView {
     var pin = ""

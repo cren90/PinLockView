@@ -1,5 +1,5 @@
 # PinLockView
-A clean, minimalistic, easy-to-use and highly customizable pin lock custom view for Android.
+A clean, minimalistic, easy-to-use and highly customizable pin lock custom view for Android. Forked from https://github.com/aritraroy/PinLockView
 
 ### Specs
 
