@@ -21,7 +21,7 @@ This library is available in **jitpack**
 dependencies {
     // other dependencies here
     
-	        implementation 'com.github.cren90:PinLockView:1.0.0'
+	        implementation 'com.github.cren90:PinLockView:1.0.1'
 	}
 ```
 
