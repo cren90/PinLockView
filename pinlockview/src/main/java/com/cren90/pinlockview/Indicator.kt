@@ -1,6 +1,7 @@
 package com.cren90.pinlockview
 
 import android.content.Context
+import android.content.res.ColorStateList
 import android.graphics.Color
 import android.util.AttributeSet
 import android.view.Gravity
@@ -84,6 +85,12 @@ class Indicator @JvmOverloads constructor(context: Context,
             drawViews()
         }
 
+    var indicatorTint: Int = 0
+        set(value) {
+            field = value
+            drawViews()
+        }
+
     @IndicatorType
     var indicatorType = IndicatorType.FIXED
         set(value) {
@@ -142,6 +149,7 @@ class Indicator @JvmOverloads constructor(context: Context,
             when (indicatorType) {
                 IndicatorType.FIXED            -> {
                     val indicator = View(context)
+                    indicator.backgroundTintList = ColorStateList.valueOf(indicatorTint)
                     if (pin.length > i) {
                         fillIndicator(indicator)
                     } else {
@@ -157,6 +165,7 @@ class Indicator @JvmOverloads constructor(context: Context,
                 IndicatorType.FILL             -> {
                     if (pin.length > i) {
                         val indicator = View(context)
+                        indicator.backgroundTintList = ColorStateList.valueOf(indicatorTint)
                         fillIndicator(indicator)
                         val params = LayoutParams(
                                 indicatorWidth,
@@ -170,7 +179,7 @@ class Indicator @JvmOverloads constructor(context: Context,
                     if (pin.length > i) {
                         val textView = TextView(context)
                         textView.textSize = pinTextSize.toFloat()
-                        textView.setTextColor(Color.WHITE)
+                        textView.setTextColor(indicatorTint)
                         textView.text = pin[i].toString()
                         textView.includeFontPadding = false
                         textView.setPadding(0, 0, 0, 0)
@@ -183,6 +192,7 @@ class Indicator @JvmOverloads constructor(context: Context,
                         addView(textView, i)
                     } else {
                         val indicator = View(context)
+                        indicator.backgroundTintList = ColorStateList.valueOf(indicatorTint)
                         emptyIndicator(indicator)
                         val params = LayoutParams(
                                 indicatorWidth,
@@ -200,7 +210,7 @@ class Indicator @JvmOverloads constructor(context: Context,
                     if (pin.length > i) {
                         val textView = TextView(context)
                         textView.textSize = pinTextSize.toFloat()
-                        textView.setTextColor(Color.WHITE)
+                        textView.setTextColor(indicatorTint)
                         textView.text = pin[i].toString()
                         textView.includeFontPadding = false
                         textView.setPadding(0, 0, 0, 0)
@@ -253,10 +263,11 @@ class Indicator @JvmOverloads constructor(context: Context,
                                                     R.drawable.dot_filled)
             emptyDrawable = typedArray.getResourceId(R.styleable.Indicator_indicatorEmptyBackground,
                                                      R.drawable.dot_empty)
-            pinLength = typedArray.getInt(R.styleable.PinLockView_pinLength,
-                                          DEFAULT_PIN_LENGTH)
             indicatorType = typedArray.getInt(R.styleable.Indicator_indicatorType,
                                               IndicatorType.FIXED)
+
+            indicatorTint = typedArray.getColor(R.styleable.Indicator_indicatorTint,
+                                                ResourceUtils.getColor(context, R.color.white))
 
             pinTextSize = typedArray.getDimension(R.styleable.Indicator_indicatorTextSize,
                                                   ResourceUtils.getDimensionInPx(
