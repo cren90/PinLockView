@@ -2,7 +2,8 @@
 A clean, minimalistic, easy-to-use and highly customizable pin lock custom view for Android.
 
 ### Specs
-[ ![Download](https://api.bintray.com/packages/cren/maven/pin-lock-view/images/download.svg) ](https://bintray.com/aritraroy/maven/pin-lock-view/_latestVersion) [![API](https://img.shields.io/badge/API-11%2B-orange.svg?style=flat)](https://android-arsenal.com/api?level=11) [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0) [![Android Arsenal](https://img.shields.io/badge/Android%20Arsenal-PinLockView-green.svg?style=true)](https://android-arsenal.com/details/1/3706)
+
+[![](https://jitpack.io/v/cren90/PinLockView.svg)](https://jitpack.io/#cren90/PinLockView) [![API](https://img.shields.io/badge/API-23%2B-orange.svg?style=flat)](https://android-arsenal.com/api?level=23) [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
 
 ![PinLockView](https://github.com/cren90/PinLockView/blob/master/screens/logo.png)
 
@@ -14,27 +15,17 @@ You can also use it as a dial pad to dial numbers. There are several other use c
 
 # Download
 
-This library is available in **jCenter** which is the default Maven repository used in Android Studio.
+This library is available in **jitpack** which is the default Maven repository used in Android Studio.
 
 ## Gradle 
 ```gradle
 dependencies {
     // other dependencies here
     
-    implementation 'com.andrognito.pinlockview:pinlockview:2.1.0'
-}
+	        implementation 'com.github.cren90:PinLockView:1.0.0'
+	}
 ```
 
-## Maven
-
-```xml
-<dependency>
-  <groupId>com.cren90.pinlockview</groupId>
-  <artifactId>pinlockview</artifactId>
-  <version>1.0.0</version>
-  <type>pom</type>
-</dependency>
-```
 
 # Usage
 We recommend you to **check the sample app** to get a complete understanding of the library. The step-by-step implementation guide is as follows.
