@@ -146,7 +146,7 @@ There are several theming options available through XML attributes which you can
 Android developer, Scrum Master
 
 
-<div class="LI-profile-badge"  data-version="v1" data-size="medium" data-locale="en_US" data-type="vertical" data-theme="light" data-vanity="crenfrow90"><a class="LI-simple-link" href='https://www.linkedin.com/in/crenfrow90?trk=profile-badge'><img src="https://i.stack.imgur.com/gVE0j.png"></a></div>
+<div class="LI-profile-badge"  data-version="v1" data-size="medium" data-locale="en_US" data-type="vertical" data-theme="light" data-vanity="crenfrow90"><a class="LI-simple-link" href='https://www.linkedin.com/in/crenfrow90?trk=profile-badge'><img src="https://i.stack.imgur.com/gVE0j.png" width="75"></a></div>
 
 <a href="https://stackexchange.com/users/1000035"><img src="https://stackexchange.com/users/flair/1000035.png" width="208" height="58" alt="profile for cren90 on Stack Exchange, a network of free, community-driven Q&amp;A sites" title="profile for cren90 on Stack Exchange, a network of free, community-driven Q&amp;A sites"></a>
 
