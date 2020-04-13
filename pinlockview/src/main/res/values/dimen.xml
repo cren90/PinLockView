@@ -8,5 +8,5 @@
 
     <dimen name="default_indicator_size">8dp</dimen>
     <dimen name="default_indicator_spacing">8dp</dimen>
-    <dimen name="default_indicator_text_size">16sp</dimen>
+    <dimen name="default_indicator_text_size">32sp</dimen>
 </resources>

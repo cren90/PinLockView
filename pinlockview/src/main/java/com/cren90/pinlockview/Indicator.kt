@@ -4,6 +4,7 @@ import android.content.Context
 import android.content.res.ColorStateList
 import android.graphics.Color
 import android.util.AttributeSet
+import android.util.TypedValue
 import android.view.Gravity
 import android.view.View
 import android.widget.LinearLayout
@@ -109,7 +110,7 @@ class Indicator @JvmOverloads constructor(context: Context,
         // If the indicator type is not fixed
 
         val textView = TextView(context)
-        textView.textSize = pinTextSize.toFloat()
+        textView.setTextSize(TypedValue.COMPLEX_UNIT_PX, pinTextSize.toFloat())
         textView.setTextColor(Color.WHITE)
         textView.text = "8"
         textView.includeFontPadding = false
@@ -178,7 +179,7 @@ class Indicator @JvmOverloads constructor(context: Context,
                 IndicatorType.FIXED_WITH_VALUE -> {
                     if (pin.length > i) {
                         val textView = TextView(context)
-                        textView.textSize = pinTextSize.toFloat()
+                        textView.setTextSize(TypedValue.COMPLEX_UNIT_PX, pinTextSize.toFloat())
                         textView.setTextColor(indicatorTint)
                         textView.text = pin[i].toString()
                         textView.includeFontPadding = false
@@ -209,7 +210,7 @@ class Indicator @JvmOverloads constructor(context: Context,
                 IndicatorType.FILL_WITH_VALUE  -> {
                     if (pin.length > i) {
                         val textView = TextView(context)
-                        textView.textSize = pinTextSize.toFloat()
+                        textView.setTextSize(TypedValue.COMPLEX_UNIT_PX, pinTextSize.toFloat())
                         textView.setTextColor(indicatorTint)
                         textView.text = pin[i].toString()
                         textView.includeFontPadding = false
@@ -269,11 +270,11 @@ class Indicator @JvmOverloads constructor(context: Context,
             indicatorTint = typedArray.getColor(R.styleable.Indicator_indicatorTint,
                                                 ResourceUtils.getColor(context, R.color.white))
 
-            pinTextSize = typedArray.getDimension(R.styleable.Indicator_indicatorTextSize,
-                                                  ResourceUtils.getDimensionInPx(
-                                                          context,
-                                                          R.dimen.default_indicator_text_size))
-                .toInt()
+            pinTextSize = typedArray.getDimensionPixelSize(R.styleable.Indicator_indicatorTextSize,
+                                                           ResourceUtils.getDimensionInPx(
+                                                                   context,
+                                                                   R.dimen.default_indicator_text_size)
+                                                               .toInt())
         } finally {
             typedArray.recycle()
         }
