@@ -321,6 +321,8 @@ class PinLockView : RecyclerView {
                                                                     R.dimen.default_elevation))
                 .toInt()
 
+            keypadDeleteButtonContentDescription = typedArray.getString(R.styleable.PinLockView_keypadDeleteButtonContentDescription)
+
 
             submitButtonDrawable = typedArray.getDrawable(R.styleable.PinLockView_keypadSubmitButtonDrawable)
             submitButtonBackgroundDrawable = typedArray.getDrawable(R.styleable.PinLockView_keypadSubmitButtonBackgroundDrawable)
@@ -338,6 +340,8 @@ class PinLockView : RecyclerView {
                                                                     context,
                                                                     R.dimen.default_elevation))
                 .toInt()
+
+            keypadSubmitButtonContentDescription = typedArray.getString(R.styleable.PinLockView_keypadSubmitButtonContentDescription)
         } finally {
             typedArray.recycle()
         }
