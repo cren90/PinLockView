@@ -3,7 +3,7 @@ A clean, minimalistic, easy-to-use and highly customizable pin lock custom view 
 
 ### Specs
 
-[![](https://jitpack.io/v/cren90/PinLockView.svg)](https://jitpack.io/#cren90/PinLockView) [![API](https://img.shields.io/badge/API-23%2B-orange.svg?style=flat)](https://android-arsenal.com/api?level=23) [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
+[![](https://jitpack.io/v/cren90/PinLockView.svg)](https://jitpack.io/#cren90/PinLockView) [![API](https://img.shields.io/badge/API-23%2B-orange.svg?style=flat)](https://android-arsenal.com/api?level=23) [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0) [![Build Status](https://app.bitrise.io/app/74d6690a17bd72cf/status.svg?token=MbPFBbRntvcUvZDzi5f4Zw&branch=master)](https://app.bitrise.io/app/74d6690a17bd72cf)
 
 
 This library allows you to implement a pin lock mechanism in your app **easily and quickly**. There are **plenty of customization options** available to change the look-and-feel of this view to match your app's theme.
